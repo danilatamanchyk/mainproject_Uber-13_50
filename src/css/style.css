@@ -1,0 +1,327 @@
+/* line 3, ../taxi_13_50/src/sass/style.sass */
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 6, ../taxi_13_50/src/sass/style.sass */
+header {
+  position: relative;
+  height: 50px;
+}
+
+/* line 10, ../taxi_13_50/src/sass/style.sass */
+nav {
+  position: fixed;
+  background-color: #212121;
+  width: 100%;
+  height: 50px;
+  z-index: 2;
+}
+
+/* line 17, ../taxi_13_50/src/sass/style.sass */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 70px;
+  list-style-type: none;
+  margin: 0;
+}
+
+/* line 24, ../taxi_13_50/src/sass/style.sass */
+.menu .menu_link {
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* line 29, ../taxi_13_50/src/sass/style.sass */
+.menu .menu_item {
+  border-right: 2px dotted black;
+  padding-right: 28px;
+}
+
+/* line 33, ../taxi_13_50/src/sass/style.sass */
+.subheader {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  height: 84px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 40, ../taxi_13_50/src/sass/style.sass */
+.subheader .subheader_call {
+  margin-top: 20px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+/* line 48, ../taxi_13_50/src/sass/style.sass */
+.subheader .subheader_phone {
+  display: block;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 12px;
+  text-align: right;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+/* line 58, ../taxi_13_50/src/sass/style.sass */
+.subheader .subheader_btn {
+  margin-top: 19px;
+  width: 172px;
+  height: 46px;
+  border: none;
+  background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+  box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+}
+
+/* line 72, ../taxi_13_50/src/sass/style.sass */
+.promo {
+  min-height: 800px;
+  background: url("../img/uber_bg.png") center center/cover no-repeat;
+  padding: 135px 0 185px 0;
+}
+
+/* line 77, ../taxi_13_50/src/sass/style.sass */
+.promo .promo_header {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+/* line 85, ../taxi_13_50/src/sass/style.sass */
+.promo .promo_subheader {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+/* line 93, ../taxi_13_50/src/sass/style.sass */
+.promo .promo_descr {
+  margin-top: 20px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* line 101, ../taxi_13_50/src/sass/style.sass */
+.promo .promo_btn {
+  display: block;
+  margin: 120px auto 0 auto;
+  border: none;
+  width: 259px;
+  height: 63px;
+  background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 63px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+}
+
+/* line 117, ../taxi_13_50/src/sass/style.sass */
+.reasons {
+  padding: 20px 0 65px 0;
+}
+
+/* line 120, ../taxi_13_50/src/sass/style.sass */
+.lable {
+  margin: 0 auto;
+  width: 113px;
+  height: 24px;
+  padding: 5px 12px;
+  font-weight: 400;
+  font-size: 11px;
+  background-color: #000;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+}
+
+/* line 132, ../taxi_13_50/src/sass/style.sass */
+.title {
+  margin-top: 43px;
+  font-weight: 700;
+  font-size: 38px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+/* line 140, ../taxi_13_50/src/sass/style.sass */
+.reasons .reasons_block {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  margin-top: 20px;
+}
+
+/* line 146, ../taxi_13_50/src/sass/style.sass */
+.reasons .reasons_block .reasons_round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  width: 116px;
+  height: 116px;
+  background: #1EACC7;
+  border-radius: 100%;
+}
+
+/* line 156, ../taxi_13_50/src/sass/style.sass */
+.reasons .reasons_block .reasons_descr {
+  width: 340px;
+}
+
+/* line 159, ../taxi_13_50/src/sass/style.sass */
+.reasons .reasons_block .reasons_descr .reasons_subtitle {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: #1EACC7;
+}
+
+/* line 165, ../taxi_13_50/src/sass/style.sass */
+.reasons .reasons_block .reasons_descr .reasons_text {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 21px;
+  color: #222222;
+}
+
+/* line 171, ../taxi_13_50/src/sass/style.sass */
+.mobile {
+  min-height: 864px;
+  padding: 48px 0 79px 0;
+  background: url("../img/mobile_bg.png") center center/cover no-repeat;
+}
+
+/* line 176, ../taxi_13_50/src/sass/style.sass */
+.mobile .subtitle {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+/* line 183, ../taxi_13_50/src/sass/style.sass */
+.mobile .row {
+  margin-top: 32px;
+}
+
+/* line 187, ../taxi_13_50/src/sass/style.sass */
+.mobile_item {
+  position: relative;
+  width: 320px;
+  height: 280px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+  padding-top: 92px;
+}
+
+/* line 194, ../taxi_13_50/src/sass/style.sass */
+.mobile_item_1 {
+  background: url("../img/mobile_screen_1.jpg") center center/cover no-repeat;
+}
+
+/* line 196, ../taxi_13_50/src/sass/style.sass */
+.mobile_item_2 {
+  background: url("../img/mobile_screen_2.jpg") center center/cover no-repeat;
+}
+
+/* line 198, ../taxi_13_50/src/sass/style.sass */
+.mobile_item_3 {
+  background: url("../img/mobile_screen_3.jpg") center center/cover no-repeat;
+}
+
+/* line 200, ../taxi_13_50/src/sass/style.sass */
+.mobile_item_4 {
+  background: url("../img/mobile_screen_4.jpg") center center/cover no-repeat;
+}
+
+/* line 202, ../taxi_13_50/src/sass/style.sass */
+.mobile_item_5 {
+  background: url("../img/mobile_screen_5.jpg") center center/cover no-repeat;
+}
+
+/* line 204, ../taxi_13_50/src/sass/style.sass */
+.mobile_item_6 {
+  background: url("../img/mobile_screen_6.jpg") center center/cover no-repeat;
+}
+
+/* line 206, ../taxi_13_50/src/sass/style.sass */
+.mobile_item_title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+/* line 213, ../taxi_13_50/src/sass/style.sass */
+.mobile_item_plus {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26px;
+  height: 26px;
+  background-color: #000;
+  border-radius: 100%;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* line 225, ../taxi_13_50/src/sass/style.sass */
+.mobile_item_plus:before {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 2px;
+  background-color: #1eacc7;
+}
+
+/* line 231, ../taxi_13_50/src/sass/style.sass */
+.mobile_item_plus:after {
+  content: '';
+  display: absolute;
+  left: 49%;
+  width: 14px;
+  height: 2px;
+  background-color: #1eacc7;
+}
+
+/* line 239, ../taxi_13_50/src/sass/style.sass */
+.choise {
+  min-height: 856px;
+  padding: 20px 0 20px 0;
+}
+
+/*# sourceMappingURL=style.css.map */
