@@ -1,4 +1,5 @@
 $main-color: #1eacc7
+$second-color: #FF5656
 
 *
   font-family: 'Roboto', sans-serif
@@ -12,7 +13,7 @@ nav
   background-color: #212121
   width: 100%
   height: 50px
-  z-index: 2
+  z-index: 5
 
 .menu
   display: flex
@@ -71,7 +72,7 @@ nav
     &:hover
       background: linear-gradient(0deg, #168ca3 0%, #3acae7 100%)
     &:active
-      width: 170px
+      width: 171px
       height: 45px 
 
 .promo
@@ -121,7 +122,7 @@ nav
     &:hover
       background: linear-gradient(0deg, #168ca3 0%, #3acae7 100%)
     &:active
-      width: 257px
+      width: 258px
       height: 62px
 
 .reasons
@@ -138,14 +139,38 @@ nav
   text-transform: uppercase
   color: #FFFFFF
   mix-blend-mode: normal
+  z-index: 2
+  &_white
+    color:#000
+    background-color: #FFF
 
 .title
-  margin-top: 43px
-  font-weight: 700
-  font-size: 38px
-  text-align: center
-  text-transform: uppercase
-  color: #222222
+ position: relative
+	margin-bottom: 0
+	margin-top: 38px
+	color: #222222
+	font-size: 38px
+	line-height: 38px
+	font-weight: 700
+	text-transform: uppercase
+	text-align: center
+	z-index: 2
+	&_white 
+		color: #fff
+
+
+
+.subtitle
+	position: relative
+	margin-top: 19px
+	color: #222222
+	font-size: 17px
+	font-weight: 400
+	text-align: center
+	z-index: 2
+	&_white 
+		color: #fff
+
 
 .reasons .reasons_block
   display: flex
@@ -179,11 +204,13 @@ nav
       color: #222222
 
 .mobile
+  position: relative
   min-height: 864px
   padding: 48px 0 79px 0
   background: url('../img/mobile_bg.png') center (center / cover) no-repeat
 
   .subtitle
+        position: relative
         font-weight: 400
         font-size: 17px
         line-height: 21px
@@ -225,6 +252,7 @@ nav
       justify-content: center
       position: absolute
       left: 50%
+      bottom: 35px
       transform: translateX(-50%)
       width: 26px
       height: 26px
@@ -240,15 +268,78 @@ nav
         background-color: $main-color
       &:after
         content: ''
-        display: absolute
+        position: absolute
+        display: block
         left: 49%
-        width: 14px
-        height: 2px
+        width: 2px
+        height: 14px
         background-color: $main-color
 
-.choise
-  min-height: 856px
-  padding: 20px 0 20px 0
+.choice
+  position: relative
+  min-height: 895px
+  padding: 57px 0 157px 0
+  background: url('../img/mobile_bg.png') center (center / cover) no-repeat
 
+  &_img
+    position: relative
+    z-index: 2
+    display: block
+    margin: 56px auto 0 auto  
+  .black
+    position: absolute
+    top: 0
+    left: 0
+    height: 499px
+    width: 100%
+    background-color: #070716  
+    z-index: 0
+  &_descr 
+		text-align: center
+		color: #222222
+		font-size: 17px
+		font-weight: 300
+		line-height: 24px
 
-
+.require
+	padding: 68px 0 84px 0
+	&_block 
+		margin: 33px 0
+		&_nmb
+			margin-bottom: 0px
+	&_title 
+		color: #1ca8c3
+		font-size: 22px
+		font-weight: 400
+	&_list 
+		list-style-type: none
+		padding-left: 50px
+		margin-top: 22px
+		li 
+			position: relative
+			font-size: 17px
+			font-weight: 300
+			line-height: 24px
+			margin-bottom: 10px
+			&:before 
+				content: ''
+				display: block 
+				position: absolute
+				left: -32px
+				top: 3px
+				width: 21px 
+				height: 20px
+				background: url('../icons/check_blue.svg') center (center / cover) no-repeat
+	&_descr 
+		margin-top: 25px
+		font-size: 17px
+		font-weight: 300
+		line-height: 24px
+		color: #1ca8c3
+	.warning 
+		.require_title
+			color: $second-color
+		.require_list
+			li 
+				&:before
+					background: url('../icons/check_red.svg') center (center / cover) no-repeat
