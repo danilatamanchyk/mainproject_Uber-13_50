@@ -418,3 +418,75 @@ nav {
 .require .warning .require_list li:before {
   background: url("../icons/check_red.svg") center center/cover no-repeat;
 }
+
+.world {
+  position: relative;
+  min-height: 895px;
+  padding: 57px 0 157px 0;
+  background: url("../img/world_bg.png") center center/cover no-repeat;
+}
+
+.title_map {
+  position: relative;
+  left: 800px;
+  top: 31px;
+  width: 336px;
+  height: 48px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 48px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.subtitle_map {
+  position: relative;
+  left: 829px;
+  top: 40px;
+  width: 324px;
+  height: 21px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.all_city {
+  position: relative;
+  top: 650px;
+  left: 855px;
+  width: 219px;
+  height: 65px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 68px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffff;
+  background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+  box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.all_city:hover {
+  background: linear-gradient(0deg, #168ca3 0%, #3acae7 100%);
+}
+
+.all_city:active {
+  width: 215px;
+  height: 62px;
+}
